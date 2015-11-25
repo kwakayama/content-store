@@ -3,9 +3,11 @@
 var async = require('async');
 
 var cloneRepo = require('./clone-repo');
+var getLocales = require('./get-locales');
 
 var tasks = [
-  cloneRepo
+  cloneRepo,
+  getLocales
 ];
 
 async.series(tasks, function(err, results) {

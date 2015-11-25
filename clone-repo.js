@@ -7,7 +7,6 @@ var config = require('./config');
 var tmpFolder = './tmp';
 
 module.exports = function(cb) {
-
   fs.removeSync(tmpFolder);
   fs.mkdirsSync(tmpFolder);
 
